@@ -1,5 +1,5 @@
 # simple_interest
-to calculate simple interest
+simple interest calculator using html, javascript and css 
 ![](Simple_Interest_Calculator.jpg)
 
 Here,
