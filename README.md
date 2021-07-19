@@ -1,6 +1,7 @@
 # simple_interest
 to calculate simple interest
 ![](Simple_Interest_Calculator.jpg)
+
 Here,
 Princple(P)=100,
 Time(T)=2,
