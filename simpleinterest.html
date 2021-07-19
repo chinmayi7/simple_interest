@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function SI() {
+            var p = parseInt(document.getElementById("n1").value);
+            var t = parseInt(document.getElementById("n2").value);
+            var r = parseInt(document.getElementById("n3").value);
+            var SI = ((p * t * r) / 100);   //simple interest is calculated and stored in the variable SI
+            document.getElementById("res").value = SI; //getElementId is a method that returns the element "res" with the specified value, i.e., the SI value here
+        }
+    </script>
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+    <div class="center">
+        <h1>Simple Interest Calculator</h1>
+        <img src="SI_formula.jpg" alt="SI formula">
+        <!-- this is simple interest formula image, save SI_formula.jpg file in the folder where html file is present-->
+        <form method="GET">
+            <label>Enter Principal(P) value</label>
+            <br><input type="text" id="n1" name="n1" placeholder="Enter p value"><br />
+
+            <label>Enter Time(T) value</label>
+            <br><input type="text" id="n2" name="n2" placeholder="Enter t value"><br />
+
+            <label>Enter Rate(R) value</label>
+            <br><input type="text" id="n3" name="n3" placeholder="Enter r value"><br />
+
+            <input type="text" id="res" name="res" placeholder="Result"><br />
+
+            <button class="button button1" onclick="SI()" type="button">Simple Interest</button> <!-- onclick performs SI() function-->
+            <button class="button button2" type="reset">Reset</button> <!-- reset button-->
+
+        </form>
+    </div>
+</body>
+
+</html>
